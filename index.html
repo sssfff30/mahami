@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مهامي</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0c3f2d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f1e6;--card:#fffdf7;--ink:#1c2b23;--mute:#6b766f;--line:#e2d9bf;--accent:#14573f;--accent-ink:#fff;--gold:#b8923a;--high:#b3392f;--high-bg:#fbe9e6;--norm:#3a4a56;--norm-bg:#e9eef1;--nafl:#2f7a4d;--nafl-bg:#e4f3ea;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--gold:#d9b865;--bg:#141a17;--card:#1d2621;--ink:#e8efe9;--mute:#97a39b;--line:#2c3832;--accent:#4fb589;--accent-ink:#0d1f17;--high:#ff8f84;--high-bg:#3a1f1c;--norm:#b7c6d0;--norm-bg:#263039;--nafl:#7fd3a0;--nafl-bg:#1e3a2b;color-scheme:dark}}
+:root[data-theme="dark"]{--gold:#d9b865;--bg:#141a17;--card:#1d2621;--ink:#e8efe9;--mute:#97a39b;--line:#2c3832;--accent:#4fb589;--accent-ink:#0d1f17;--high:#ff8f84;--high-bg:#3a1f1c;--norm:#b7c6d0;--norm-bg:#263039;--nafl:#7fd3a0;--nafl-bg:#1e3a2b;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Tajawal","Segoe UI",Tahoma,"Noto Naskh Arabic",system-ui,sans-serif;font-size:17px;line-height:1.5}
+.wrap{max-width:640px;margin:0 auto;padding:18px 14px 60px}
+.hero{position:relative;overflow:hidden;text-align:center;color:#fff;padding:18px 14px 16px;border-radius:22px;border:2px solid var(--gold);background:linear-gradient(160deg,#0c3f2d,#1b6a4d)}.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='none' stroke='%23d9b865' stroke-opacity='.3'%3E%3Crect x='11' y='11' width='22' height='22'/%3E%3Crect x='11' y='11' width='22' height='22' transform='rotate(45 22 22)'/%3E%3C/g%3E%3C/svg%3E")}.hero>*{position:relative}.bism{font-family:"Amiri","Tajawal",serif;color:#f0d98a;font-size:20px}h1{margin:2px 0 0;font-size:30px;font-family:"Amiri","Tajawal",serif;font-weight:700}.clk{direction:ltr;font-size:40px;font-weight:700;letter-spacing:1px;font-variant-numeric:tabular-nums;margin-top:6px}.hj{font-family:"Amiri","Tajawal",serif;font-size:21px;color:#f0d98a;margin-top:2px}.gr{font-size:14px;color:#dbe9e1}.ayah{font-family:"Amiri","Tajawal",serif;font-size:19px;color:var(--gold);text-align:center;margin-top:18px}.card h2::before{content:"✦ ";color:var(--gold)}
+.sub{color:var(--mute);font-size:14px;margin-top:2px}
+.tabs{display:flex;gap:8px;margin:16px 0 12px}
+.tab{flex:1;padding:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;font:inherit;font-weight:700;cursor:pointer}
+.tab.on{background:var(--accent);color:var(--accent-ink);border-color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:12px}
+.card h2{margin:0 0 8px;font-size:16px;color:var(--mute);font-weight:500}
+input,select,button{font:inherit}
+input[type=text],input[type=date],input[type=time],select{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);min-width:0}
+.row{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.row>*{flex:1 1 110px}
+label.f{display:block;font-size:12px;color:var(--mute);margin-bottom:2px}
+.lv{display:flex;gap:6px;margin-top:8px}
+.lv button{flex:1;padding:8px 4px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;cursor:pointer}
+.lv button.on[data-lv=high]{background:var(--high-bg);color:var(--high);border-color:var(--high)}
+.lv button.on[data-lv=norm]{background:var(--norm-bg);color:var(--norm);border-color:var(--norm)}
+.lv button.on[data-lv=nafl]{background:var(--nafl-bg);color:var(--nafl);border-color:var(--nafl)}
+.add{width:100%;margin-top:10px;padding:11px;border:0;border-radius:12px;background:var(--accent);color:var(--accent-ink);font-weight:700;cursor:pointer}
+.msg{min-height:20px;font-size:13px;color:var(--accent);margin-top:6px}
+.nav{display:flex;align-items:center;gap:8px;margin:14px 0 6px}
+.nav .mid{flex:1;text-align:center}
+.nav .mid b{display:block;font-size:18px}
+.nav .mid span{font-size:12px;color:var(--mute)}
+.nb{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:18px;cursor:pointer}
+.bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden;margin:6px 0 10px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--gold));width:0;transition:width .3s}
+ul{list-style:none;margin:0;padding:0}
+li.t{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:8px}
+li.t.done .tt{text-decoration:line-through;color:var(--mute)}
+li.t input[type=checkbox]{width:22px;height:22px;accent-color:var(--accent);flex:none}
+.tt{flex:1;word-break:break-word}
+.tag{font-size:12px;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.tag.high{background:var(--high-bg);color:var(--high)}
+.tag.norm{background:var(--norm-bg);color:var(--norm)}
+.tag.nafl{background:var(--nafl-bg);color:var(--nafl)}
+.tm{font-size:13px;color:var(--mute);white-space:nowrap;direction:ltr}
+.ib{border:0;background:none;color:var(--mute);font-size:16px;cursor:pointer;padding:4px}
+.empty{color:var(--mute);text-align:center;padding:14px 0;font-size:14px}
+.st{font-size:12px;color:var(--mute);text-align:center;margin-top:16px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero"><div class="bism">بسم الله الرحمن الرحيم</div><h1>مهامي</h1><div class="clk" id="clk"></div><div class="hj" id="hj"></div><div class="gr" id="gr"></div></div>
+  
+  <div class="tabs">
+    <button class="tab on" id="tabD">مهام اليوم</button>
+    <button class="tab" id="tabW">مهام الأسبوع</button>
+  </div>
+
+  <section id="dayView">
+    <div class="card">
+      <h2>أضف مهمة</h2>
+      <input type="text" id="dT" placeholder="وش المهمة؟" maxlength="200">
+      <div class="row">
+        <div><label class="f">اليوم</label><input type="date" id="dD"></div>
+        <div><label class="f">الوقت (اختياري)</label><input type="time" id="dM"></div>
+      </div>
+      <div class="lv" id="dLv">
+        <button data-lv="high">هامة</button><button data-lv="norm" class="on">عادية</button><button data-lv="nafl">مستحبة</button>
+      </div>
+      <button class="add" id="dAdd">إضافة</button>
+      <div class="msg" id="dMsg"></div>
+    </div>
+    <div class="nav">
+      <button class="nb" id="nxt" aria-label="اليوم التالي">›</button>
+      <div class="mid"><b id="dayName"></b><span id="dayHij"></span></div>
+      <button class="nb" id="prv" aria-label="اليوم السابق">‹</button>
+    </div>
+    <div class="row" style="margin:0 0 4px"><button class="tab" id="goT">اليوم</button><button class="tab" id="goN">غدًا</button></div>
+    <div class="bar"><i id="bar"></i></div>
+    <ul id="dayList"></ul>
+  </section>
+
+  <section id="weekView" class="hide">
+    <div class="card">
+      <h2>أضف مهمة أسبوعية</h2>
+      <input type="text" id="wT" placeholder="وش مهمة الأسبوع؟" maxlength="200">
+      <div class="row"><div><label class="f">الأسبوع</label><select id="wS"></select></div></div>
+      <div class="lv" id="wLv">
+        <button data-lv="high">هامة</button><button data-lv="norm" class="on">عادية</button><button data-lv="nafl">مستحبة</button>
+      </div>
+      <button class="add" id="wAdd">إضافة</button>
+      <div class="msg" id="wMsg"></div>
+    </div>
+    <div id="weeks"></div>
+  </section>
+
+  <div class="card" style="margin-top:16px"><label class="f">بداية اليوم: وقت وصول إشعارات مهام اليوم</label><input type="time" id="dsT"></div>
+  <button class="add" id="nBtn" style="display:none">فعّل الإشعارات</button>
+  <div class="st" id="st"></div>
+  <div class="ayah">﴿ وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ﴾</div>
+</div>
+
+<script>
+(function(){
+var LV={high:'هامة',norm:'عادية',nafl:'مستحبة'},ORD={high:0,norm:1,nafl:2};
+var S={tasks:[]},view='d',cur=null,ref=null,mode='local',LSK='mahami.tasks.v1',lastDay='';
+function $(i){return document.getElementById(i)}
+function pad(n){return n<10?'0'+n:''+n}
+function fmt(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function parse(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+function addD(s,n){var d=parse(s);d.setDate(d.getDate()+n);return fmt(d)}
+function weekStart(s){var d=parse(s);d.setDate(d.getDate()-((d.getDay()+1)%7));return fmt(d)}
+function todayS(){return fmt(new Date())}
+function nice(s,o){try{return parse(s).toLocaleDateString('ar-SA-u-ca-gregory-nu-latn',o)}catch(e){return s}}
+function hij(s){try{return parse(s).toLocaleDateString('ar-SA-u-ca-islamic-umalqura-nu-latn',{day:'numeric',month:'long',year:'numeric'})}catch(e){return ''}}
+function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+
+function hijFull(d){try{return d.toLocaleDateString('ar-SA-u-ca-islamic-umalqura-nu-latn',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}catch(e){return ''}}
+function tick(){var d=new Date();
+  try{$('clk').textContent=d.toLocaleTimeString('ar-SA-u-nu-latn',{hour:'numeric',minute:'2-digit',second:'2-digit',hour12:true})}catch(e){$('clk').textContent=d.toLocaleTimeString()}
+  var ds=fmt(d);
+  if(ds!==lastDay){lastDay=ds;$('hj').textContent=hijFull(d);$('gr').textContent=nice(ds,{weekday:'long',day:'numeric',month:'long',year:'numeric'})+' م'}
+}
+/* storage: IndexedDB, shared with the service worker */
+var DBN='mahami',ST='kv',lastN={},REPEAT=10*60*1000;
+function idb(){return new Promise(function(res,rej){var r=indexedDB.open(DBN,1);r.onupgradeneeded=function(){r.result.createObjectStore(ST)};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}})}
+function idbGet(){return idb().then(function(d){return new Promise(function(res){var q=d.transaction(ST).objectStore(ST).get('tasks');q.onsuccess=function(){res(Array.isArray(q.result)?q.result:[])};q.onerror=function(){res([])}})}).catch(function(){return []})}
+function persist(){idb().then(function(d){var t=d.transaction(ST,'readwrite');t.objectStore(ST).put(S.tasks,'tasks');t.oncomplete=check}).catch(function(){status('تعذّر الحفظ')})}
+function status(t){$('st').textContent=t}
+function reload(){idbGet().then(function(t){S.tasks=t;render();check()})}
+function notifOK(){return 'Notification' in window&&Notification.permission==='granted'}
+function updBtn(){$('nBtn').style.display=('Notification' in window&&Notification.permission==='default')?'block':'none'}
+function notify(t,due){
+  if(!notifOK()||!navigator.serviceWorker)return;
+  navigator.serviceWorker.ready.then(function(r){r.showNotification((due?'⏰ ':'📌 ')+t.t,{body:LV[t.lv]+(t.m?' · '+t.m:' · مهمة اليوم'),tag:'task-'+t.id,renotify:true,requireInteraction:true,lang:'ar',dir:'rtl',icon:'icon-192.png',badge:'icon-192.png',actions:[{action:'done',title:'تم ✓'}],data:{id:t.id}})})
+}
+function dayStart(){try{return localStorage.getItem('mahami.dayStart')||'05:00'}catch(e){return '05:00'}}
+function seenGet(ts){try{var v=JSON.parse(localStorage.getItem('mahami.ds')||'{}');return v.d===ts&&Array.isArray(v.ids)?v.ids:[]}catch(e){return []}}
+function seenSet(ts,ids){try{localStorage.setItem('mahami.ds',JSON.stringify({d:ts,ids:ids}))}catch(e){}}
+function check(){
+  var n=new Date(),ts=fmt(n),hm=pad(n.getHours())+':'+pad(n.getMinutes());
+  if(notifOK()&&navigator.serviceWorker)navigator.serviceWorker.ready.then(function(r){r.getNotifications().then(function(l){l.forEach(function(x){var id=x.data&&x.data.id;if(!id)return;var t=S.tasks.filter(function(q){return q.id===id})[0];if(!t||t.done||(t.k==='d'&&t.date<ts))x.close()})})});
+  var seen=seenGet(ts),ds=dayStart(),changed=false;
+  S.tasks.forEach(function(t){
+    if(t.k!=='d'||t.done||t.date!==ts)return;
+    var start=hm>=ds&&seen.indexOf(t.id)<0;
+    var due=t.m&&t.m<=hm&&(!lastN[t.id]||n.getTime()-lastN[t.id]>=REPEAT);
+    if(due){lastN[t.id]=n.getTime();notify(t,true)}else if(start){notify(t,false)}
+    if(start){seen.push(t.id);changed=true}
+  });
+  if(changed)seenSet(ts,seen);
+}
+async function init(){
+  cur=todayS();$('dD').value=addD(todayS(),1);
+  S.tasks=await idbGet();
+  render();setInterval(tick,1000);
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+    navigator.serviceWorker.addEventListener('message',function(e){if(e.data==='sync')reload()});
+  }
+  updBtn();
+  $('dsT').value=dayStart();
+  $('dsT').onchange=function(){try{localStorage.setItem('mahami.dayStart',$('dsT').value||'05:00')}catch(e){}check()};
+  $('nBtn').onclick=function(){Notification.requestPermission().then(function(){updBtn();check()})};
+  setInterval(check,20000);check();
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)reload()});
+  status('محفوظة على هذا الجهاز');
+}
+
+/* tasks */
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+function sortDay(a,b){
+  if(a.done!==b.done)return a.done?1:-1;
+  var ta=!!a.m,tb=!!b.m;
+  if(ta!==tb)return ta?-1:1;
+  if(ta&&a.m!==b.m)return a.m<b.m?-1:1;
+  if(ORD[a.lv]!==ORD[b.lv])return ORD[a.lv]-ORD[b.lv];
+  return a.id<b.id?-1:1;
+}
+function lvPick(box){var on=box.querySelector('.on');return on?on.dataset.lv:'norm'}
+function wireLv(box){box.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(box.children,function(c){c.classList.remove('on')});b.classList.add('on')})}
+function rel(s){var t=todayS();if(s===t)return 'اليوم';if(s===addD(t,1))return 'غدًا';if(s===addD(t,-1))return 'أمس';return nice(s,{weekday:'long'})}
+
+function taskRow(t,opts){
+  var li=el('li','t'+(t.done?' done':''));
+  var cb=document.createElement('input');cb.type='checkbox';cb.checked=!!t.done;
+  cb.addEventListener('change',function(){t.done=cb.checked;persist();render()});
+  li.appendChild(cb);
+  li.appendChild(el('span','tt',t.t));
+  if(t.m)li.appendChild(el('span','tm',t.m));
+  li.appendChild(el('span','tag '+t.lv,LV[t.lv]));
+  if(opts&&opts.move){var mv=el('button','ib','⇠');mv.title='رحّلها لليوم التالي';mv.setAttribute('aria-label','ترحيل لليوم التالي');mv.addEventListener('click',function(){t.date=addD(t.date,1);persist();render()});li.appendChild(mv)}
+  var del=el('button','ib','✕');del.title='حذف';del.setAttribute('aria-label','حذف');
+  del.addEventListener('click',function(){S.tasks=S.tasks.filter(function(x){return x!==t});persist();render()});
+  li.appendChild(del);
+  return li;
+}
+
+function renderDay(){
+  $('dayName').textContent=rel(cur)+' · '+nice(cur,{day:'numeric',month:'long'});
+  $('dayHij').textContent=hij(cur);
+  var list=S.tasks.filter(function(t){return t.k==='d'&&t.date===cur}).sort(sortDay);
+  var ul=$('dayList');ul.replaceChildren();
+  if(!list.length){var li=el('li','empty','لا توجد مهام في هذا اليوم');ul.appendChild(li)}
+  list.forEach(function(t){ul.appendChild(taskRow(t,{move:!t.done}))});
+  var done=list.filter(function(t){return t.done}).length;
+  $('bar').style.width=(list.length?Math.round(done*100/list.length):0)+'%';
+}
+
+function renderWeek(){
+  var ws=weekStart(todayS()),nx=addD(ws,7),sel=$('wS'),keep=sel.value;
+  sel.replaceChildren();
+  [[ws,'هذا الأسبوع'],[nx,'الأسبوع الجاي']].forEach(function(p){
+    var o=el('option',null,p[1]+' (من السبت '+nice(p[0],{day:'numeric',month:'long'})+')');o.value=p[0];sel.appendChild(o)});
+  sel.value=keep===ws?ws:nx;
+  var box=$('weeks');box.replaceChildren();
+  var starts={};S.tasks.forEach(function(t){if(t.k==='w')starts[t.ws]=1});
+  starts[ws]=1;starts[nx]=1;
+  Object.keys(starts).sort().forEach(function(k){
+    if(k<ws&&!S.tasks.some(function(t){return t.k==='w'&&t.ws===k&&!t.done}))return;
+    var c=el('div','card');
+    var label=k===ws?'هذا الأسبوع':k===nx?'الأسبوع الجاي':k<ws?'أسبوع سابق':'أسبوع لاحق';
+    c.appendChild(el('h2',null,label+' · من السبت '+nice(k,{day:'numeric',month:'long'})));
+    var ul=el('ul');
+    var list=S.tasks.filter(function(t){return t.k==='w'&&t.ws===k}).sort(function(a,b){
+      if(a.done!==b.done)return a.done?1:-1;if(ORD[a.lv]!==ORD[b.lv])return ORD[a.lv]-ORD[b.lv];return a.id<b.id?-1:1});
+    if(!list.length)ul.appendChild(el('li','empty','لا توجد مهام أسبوعية'));
+    list.forEach(function(t){ul.appendChild(taskRow(t))});
+    c.appendChild(ul);box.appendChild(c);
+  });
+}
+
+function render(){
+  lastDay='';tick();
+  renderDay();renderWeek();
+}
+
+function setView(v){
+  view=v;
+  $('dayView').classList.toggle('hide',v!=='d');
+  $('weekView').classList.toggle('hide',v!=='w');
+  $('tabD').classList.toggle('on',v==='d');
+  $('tabW').classList.toggle('on',v==='w');
+}
+
+function addDay(){
+  var t=$('dT').value.trim();if(!t){$('dT').focus();return}
+  var d=$('dD').value||addD(todayS(),1);
+  S.tasks.push({id:uid(),k:'d',t:t,date:d,m:$('dM').value||'',lv:lvPick($('dLv')),done:false});
+  persist();
+  $('dT').value='';$('dM').value='';
+  $('dMsg').textContent='تمت الإضافة ليوم '+rel(d)+' ✓';
+  cur=d;render();$('dT').focus();
+}
+function addWeek(){
+  var t=$('wT').value.trim();if(!t){$('wT').focus();return}
+  var w=$('wS').value;
+  S.tasks.push({id:uid(),k:'w',t:t,ws:w,lv:lvPick($('wLv')),done:false});
+  persist();$('wT').value='';
+  $('wMsg').textContent='تمت الإضافة ✓';
+  render();$('wT').focus();
+}
+
+$('tabD').onclick=function(){setView('d')};
+$('tabW').onclick=function(){setView('w')};
+$('prv').onclick=function(){cur=addD(cur,-1);render()};
+$('nxt').onclick=function(){cur=addD(cur,1);render()};
+$('goT').onclick=function(){cur=todayS();render()};
+$('goN').onclick=function(){cur=addD(todayS(),1);render()};
+$('dAdd').onclick=addDay;$('wAdd').onclick=addWeek;
+$('dT').addEventListener('keydown',function(e){if(e.key==='Enter')addDay()});
+$('wT').addEventListener('keydown',function(e){if(e.key==='Enter')addWeek()});
+wireLv($('dLv'));wireLv($('wLv'));
+init();
+})();
+</script>
+</body>
+</html>
